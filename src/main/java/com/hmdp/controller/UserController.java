@@ -79,4 +79,14 @@ public class UserController {
         // 返回
         return Result.ok(info);
     }
+
+    @GetMapping("/sign")
+    public Result sign(){
+        return userService.sign();
+    }
+
+    @GetMapping("/sign/count")
+    public Result signCount(){
+        return userService.signCount();
+    }
 }

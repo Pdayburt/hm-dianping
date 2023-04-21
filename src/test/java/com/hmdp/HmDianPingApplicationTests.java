@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -57,8 +59,14 @@ class HmDianPingApplicationTests {
             });
         }
         countDownLatch.await();
-
     }
+
+    @Test
+    void testArray(){
+        System.out.println(3 * 0.1);
+    }
+
+
 
 
 
